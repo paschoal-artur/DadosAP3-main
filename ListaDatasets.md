@@ -1,6 +1,6 @@
 # AP3-Lab-CD
 
-# Datasets Utilizados (sem Gravidez na Adolescência)
+# Datasets Utilizados
 
 Abaixo, os datasets estão **organizados por categoria** para facilitar a pesquisa e o entendimento de como cada conjunto de dados pode ser utilizado no projeto.
 
