@@ -119,7 +119,6 @@ Para construir uma **nova métrica** (ou índice) de infraestrutura urbana, adot
 
 2. **Conversão em escala de 0 a 1**:  
    - Para cada indicador, definir um método de normalização.  
-   - Exemplo: \(\displaystyle \text{Valor Normalizado} = \frac{\text{Valor} - \min(\text{Valor})}{\max(\text{Valor}) - \min(\text{Valor})}\).
 
 ### 4.3 Combinação em um Índice Sintético
 
@@ -128,7 +127,7 @@ Para construir uma **nova métrica** (ou índice) de infraestrutura urbana, adot
    - Exemplo: 40% saneamento, 20% mobilidade, 20% lazer, 20% saúde.
 
 2. **Cálculo do índice**:  
-   - Índice de Infraestrutura (II) = \(\sum (\text{indicador}_i \times \text{peso}_i)\).  
+   - Índice de Infraestrutura (II) = ∑ indicador * peso.  
    - Gera-se um valor final (0 a 1) para cada bairro.
 
 ### 4.4 Comparação com IDH
