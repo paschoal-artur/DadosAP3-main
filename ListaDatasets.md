@@ -46,18 +46,6 @@ Densidade populacional por bairros, prévia da população do munícipio com bas
 
 ---
 
-### [Domicílios](https://mapas.fortaleza.ce.gov.br/mapa/785/domicilios)
-**Categoria**: SOCIOECONÔMICOS  
-**Subcategoria**: Dados Populacionais  
-**Fonte**: IBGE.*Prévia do munícipio com base nos dados do Censo Demográfico 2022  
-**Ano**: 2024  
-**Última atualização**: 2024-05-23 19:35:00  
-
-**Descrição**:  
-Total de domicílios por bairros, prévia do munícipio com base nos dados do Censo Demográfico 2022.
-
----
-
 ### [IDH - Classificação](https://mapas.fortaleza.ce.gov.br/mapa/35/idh-classificacao)
 **Categoria**: SOCIOECONÔMICOS  
 **Subcategoria**: Dados Populacionais  
@@ -81,18 +69,6 @@ Informações do estudo sobre a situação do Índice de Desenvolvimento Humano 
 
 **Descrição**:  
 O projeto urbaniza e requalifica campos de futebol em bairros de alto índice de vulnerabilidade. O objetivo é entregar à população equipamentos esportivos de qualidade, onde a comunidade possa, além de praticar atividade física, ter um espaço seguro de convivência, lazer e formação cidadã.
-
----
-
-### [Trechos de Difícil Acesso](https://mapas.fortaleza.ce.gov.br/mapa/55/trechos-de-dificil-acesso)
-**Categoria**: INFRAESTRUTURA E EQUIPAMENTOS  
-**Subcategoria**: Limpeza Pública  
-**Fonte**: SCSP  
-**Ano**: 2024  
-**Última atualização**: 2024-04-25 14:36:16  
-
-**Descrição**:  
-Localização e extensão dos trechos de difícil acesso aos caminhões de coleta de lixo que realizam a limpeza pública em Fortaleza.
 
 ---
 
@@ -156,18 +132,6 @@ Pontos de paradas de transporte público.
 
 ---
 
-### [Rede Cuca](https://mapas.fortaleza.ce.gov.br/mapa/735/rede-cuca)
-**Categoria**: INFRAESTRUTURA E EQUIPAMENTOS  
-**Subcategoria**: Cultura Esporte e Lazer  
-**Fonte**: Dados da SEJUV, georreferenciados por IPLANFOR.  
-**Ano**: 2023  
-**Última atualização**: 2023-11-07 12:14:11  
-
-**Descrição**:  
-Rede Cuca, rede de proteção social e oportunidades da Prefeitura de Fortaleza. Realiza cursos em diversas áreas do conhecimento, cultura, esporte e atividades de difusão cultural com cinema, teatro, música e dança.
-
----
-
 ### [Rede Juv](https://mapas.fortaleza.ce.gov.br/mapa/736/rede-juv)
 **Categoria**: INFRAESTRUTURA E EQUIPAMENTOS  
 **Subcategoria**: Cultura Esporte e Lazer  
@@ -204,4 +168,8 @@ Mapa da rede de esgoto da Companhia de Água e Esgoto do Ceará na cidade de For
 
 ---
 
-> **Observação**: O dataset **Gravidez na Adolescência** foi removido para focar em infraestrutura urbana e delimitação territorial.  
+> **Observação**: Os seguintes datasets foram removidos para direcionar melhor o escopo de atuação do trabalho
+- **Gravidez na Adolescência**
+- **Domicílios**
+- **Trechos de Difícil Acesso**
+- **Rede CUCA**
