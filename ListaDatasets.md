@@ -14,6 +14,7 @@ Abaixo, os datasets estão **organizados por categoria** para facilitar a pesqui
 **Fonte**: IPLANFOR  
 **Ano**: 2023  
 **Última atualização**: 2023-09-22 18:36:55  
+**Tipo Arquivo**: Shape File, CSV
 
 **Descrição**:  
 Limites dos 121 bairros pertencentes ao município de Fortaleza, de acordo com o Decreto Nº 14.498, de 18 de Setembro de 2019, informando a que território e Secretaria Executiva Regional pertencem.
@@ -26,6 +27,7 @@ Limites dos 121 bairros pertencentes ao município de Fortaleza, de acordo com o
 **Fonte**: Plano Fortaleza 2040 e PLHIS-For  
 **Ano**: 2016  
 **Última atualização**: 2023-06-16 13:19:39  
+**Tipo Arquivo**: Shape File, CSV
 
 **Descrição**:  
 Delimitação dos assentamentos precários encontrados dentro do limite municipal.
@@ -40,6 +42,7 @@ Delimitação dos assentamentos precários encontrados dentro do limite municipa
 **Fonte**: IBGE. *Prévia da População do munícipio com base nos dados do Censo Demográfico 2022  
 **Ano**: 2024  
 **Última atualização**: 2024-05-23 18:57:48  
+**Tipo Arquivo**: CSV, GeoJson
 
 **Descrição**:  
 Densidade populacional por bairros, prévia da população do munícipio com base nos dados do Censo Demográfico 2022.
@@ -52,6 +55,7 @@ Densidade populacional por bairros, prévia da população do munícipio com bas
 **Fonte**: SDE  
 **Ano**: 2010  
 **Última atualização**: 2023-07-26 18:23:32  
+**Tipo Arquivo**: CSV, GeoJson
 
 **Descrição**:  
 Informações do estudo sobre a situação do Índice de Desenvolvimento Humano de Fortaleza, por bairro, tendo como base os dados do censo demográfico realizado em 2010.
@@ -66,6 +70,7 @@ Informações do estudo sobre a situação do Índice de Desenvolvimento Humano 
 **Fonte**: SCSP  
 **Ano**: 2022  
 **Última atualização**: 2023-05-23 17:39:46  
+**Tipo Arquivo**: CSV, GeoJson
 
 **Descrição**:  
 O projeto urbaniza e requalifica campos de futebol em bairros de alto índice de vulnerabilidade. O objetivo é entregar à população equipamentos esportivos de qualidade, onde a comunidade possa, além de praticar atividade física, ter um espaço seguro de convivência, lazer e formação cidadã.
@@ -78,6 +83,7 @@ O projeto urbaniza e requalifica campos de futebol em bairros de alto índice de
 **Fonte**: SMS  
 **Ano**: 2021  
 **Última atualização**: 2023-05-23 14:01:01  
+**Tipo Arquivo**: CSV, GeoJson
 
 **Descrição**:  
 Rede de Atenção Psicossocial do Município de Fortaleza dispõe de 15 Centros, sendo seis CAPS GERAL, sete CAPS AD – Álcool e Drogas e dois CAPS Infantis. O perfil de atendimento são pessoas que apresentam sofrimentos psíquicos e/ou transtornos mentais severos e persistentes além de dependentes químicos. Nesses casos, o cuidado é partilhado com a Atenção Primária e com os recursos comunitários do território.
@@ -90,6 +96,7 @@ Rede de Atenção Psicossocial do Município de Fortaleza dispõe de 15 Centros,
 **Fonte**: SME  
 **Ano**: 2023  
 **Última atualização**: 2023-08-10 11:44:24  
+**Tipo Arquivo**: CSV, Shape File
 
 **Descrição**:  
 Delimitação dos Distritos de Educação do município de Fortaleza.
@@ -102,6 +109,7 @@ Delimitação dos Distritos de Educação do município de Fortaleza.
 **Fonte**: Mais Ação  
 **Ano**: 2020  
 **Última atualização**: 2023-07-26 19:07:42  
+**Tipo Arquivo**: CSV, GeoJson
 
 **Descrição**:  
 Localização e identificação dos diversos equipamentos municipais de assistência social para crianças, jovens e adultos.
@@ -114,6 +122,7 @@ Localização e identificação dos diversos equipamentos municipais de assistê
 **Fonte**: SMS  
 **Ano**: 2023  
 **Última atualização**: 2023-08-30 18:27:35  
+**Tipo Arquivo**: CSV, GeoJson
 
 **Descrição**:  
 Localização e informações diversas dos equipamentos municipais de saúde e assistência social, geridos pela Prefeitura de Fortaleza.
@@ -126,6 +135,7 @@ Localização e informações diversas dos equipamentos municipais de saúde e a
 **Fonte**: ETUFOR  
 **Ano**: 2022  
 **Última atualização**: 2023-06-26 16:40:24  
+**Tipo Arquivo**: CSV
 
 **Descrição**:  
 Pontos de paradas de transporte público.
@@ -138,6 +148,7 @@ Pontos de paradas de transporte público.
 **Fonte**: SEJUV  
 **Ano**: 2023  
 **Última atualização**: 2023-11-09 18:38:37  
+**Tipo Arquivo**: CSV, GeoJson
 
 **Descrição**:  
 A Rede Juv integra equipamentos de educação, esporte e cultura voltados para jovens de Fortaleza.
@@ -150,6 +161,7 @@ A Rede Juv integra equipamentos de educação, esporte e cultura voltados para j
 **Fonte**: CAGECE  
 **Ano**: 2024  
 **Última atualização**: 2024-11-22 12:30:55  
+**Tipo Arquivo**: Shape File, CSV
 
 **Descrição**:  
 Mapa da rede de abastecimento de água da Companhia de Água e Esgoto do Ceará na cidade de Fortaleza.
@@ -162,6 +174,7 @@ Mapa da rede de abastecimento de água da Companhia de Água e Esgoto do Ceará 
 **Fonte**: CAGECE  
 **Ano**: 2024  
 **Última atualização**: 2024-04-08 12:33:27  
+**Tipo Arquivo**: Shape File, CSV
 
 **Descrição**:  
 Mapa da rede de esgoto da Companhia de Água e Esgoto do Ceará na cidade de Fortaleza.
@@ -173,4 +186,3 @@ Mapa da rede de esgoto da Companhia de Água e Esgoto do Ceará na cidade de For
 - **Domicílios**
 - **Trechos de Difícil Acesso**
 - **Rede CUCA**
-.
