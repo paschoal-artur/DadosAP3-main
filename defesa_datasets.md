@@ -73,7 +73,7 @@ Abaixo, listamos os conjuntos de dados que **manteremos** por serem relevantes �
 
 ## 4. Como Podemos Cruzar Essas Informações?
 
-Para construir uma **nova métrica** (ou índice) de infraestrutura urbana, sugerimos os seguintes passos:
+Para construir uma **nova métrica** (ou índice) de infraestrutura urbana, adotaremos os seguintes passos:
 
 1. **Padronização Geoespacial**  
    - Todos os *datasets* que possuem dados espaciais (shapefiles, geojsons, etc.) devem ser **unificados** por uma mesma referência territorial.  
