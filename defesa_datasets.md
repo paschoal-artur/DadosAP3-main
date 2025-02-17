@@ -23,10 +23,6 @@ Abaixo, listamos os conjuntos de dados que **manteremos** por serem relevantes �
    - *Por que manter?*  
      - Indica vulnerabilidade habitacional e déficit de infraestrutura básica.
 
-3. **Trechos de Difícil Acesso**  
-   - *Por que manter?*  
-     - Evidencia locais onde serviços de coleta de lixo enfrentam obstáculos, sinalizando carência de infraestrutura pública.
-
 4. **Bairros de Fortaleza**  
    - *Por que manter?*  
      - Fundamental para delimitação e junção (join) de dados.  
@@ -46,11 +42,6 @@ Abaixo, listamos os conjuntos de dados que **manteremos** por serem relevantes �
    - *Por que manter?*  
      - Mostra a divisão territorial específica da rede educacional, podendo revelar disparidades na oferta de escolas.
 
-8. **Domicílios**  
-   - *Por que manter?*  
-     - Ajuda a comparar infraestrutura com o total de residências.  
-     - Indicador útil para entender a *cobertura de serviços por domicílio*.
-
 9. **Equipamentos de Assistência Social**  
    - *Por que manter?*  
      - Demonstra a presença de equipamentos públicos voltados a grupos vulneráveis.  
@@ -69,19 +60,15 @@ Abaixo, listamos os conjuntos de dados que **manteremos** por serem relevantes �
     - *Por que manter?*  
       - Mobilidade urbana é crucial; podemos avaliar a *densidade de pontos de ônibus* por bairro.
 
-13. **Rede Cuca**  
-    - *Por que manter?*  
-      - Oferece infraestrutura de cultura e lazer voltada a jovens; pode ser convertido em *número de equipamentos por bairro*.
-
-14. **Rede Juv**  
+13. **Rede Juv**  
     - *Por que manter?*  
       - Semelhante à Rede Cuca, ampliando o acesso a cultura/esporte/lazer para jovens.
 
-15. **Rede de Abastecimento de Água**  
+14. **Rede de Abastecimento de Água**  
     - *Por que manter?*  
       - Saneamento básico (água encanada) é um indicador essencial de infraestrutura.
 
-16. **Rede de Esgoto**  
+15. **Rede de Esgoto**  
     - *Por que manter?*  
       - Saneamento básico (esgoto) é outro indicador crítico de infraestrutura.
 
