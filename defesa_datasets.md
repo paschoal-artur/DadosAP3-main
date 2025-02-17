@@ -6,7 +6,7 @@ Este repositório tem como objetivo **criticar a eficácia do IDH** (Índice de 
 
 ## 1. Contexto
 
-O IDH considera, de forma resumida, **saúde, educação e renda**. Entretanto, aspectos de **infraestrutura urbana**, como acesso a saneamento, equipamentos de lazer, mobilidade e assistência social, podem ter um impacto direto na qualidade de vida, mas não aparecem de forma explícita no IDH. Nossa proposta é construir um índice que inclua **variáveis de infraestrutura** e, em seguida, **comparar** com o IDH de cada bairro.
+O IDH considera, de forma resumida, **saúde, educação e renda**. Entretanto, aspectos de **infraestrutura urbana**, como acesso a saneamento, equipamentos de lazer, mobilidade e assistência social, podem ter um impacto direto na qualidade de vida, mas não aparecem de forma explícita no IDH. Nossa proposta é construir um índice que inclua **variáveis de infraestrutura** e, em seguida, **comparar** com o IDH de cada bairro para verificar possíveis divergências.
 
 ---
 
@@ -15,59 +15,84 @@ O IDH considera, de forma resumida, **saúde, educação e renda**. Entretanto, 
 Abaixo, listamos os conjuntos de dados que **manteremos** por serem relevantes à análise de infraestrutura e/ou necessários para a delimitação territorial:
 
 1. **Areninhas**  
-   - *Por que manter?* Representa infraestrutura de esporte e lazer em áreas vulneráveis.
+   - *Por que manter?*  
+     - Representa infraestrutura de esporte e lazer em áreas vulneráveis.  
+     - Pode ser convertido em indicador de *quantidade de arenas por bairro*.
 
 2. **Assentamentos Precários**  
-   - *Por que manter?* Indica vulnerabilidade habitacional, fundamental para mensurar déficit de infraestrutura básica.
+   - *Por que manter?*  
+     - Indica vulnerabilidade habitacional e déficit de infraestrutura básica.
 
 3. **Trechos de Difícil Acesso**  
-   - *Por que manter?* Mostra locais onde serviços de limpeza e coleta de lixo enfrentam dificuldades, evidenciando carência de infraestrutura pública.
+   - *Por que manter?*  
+     - Evidencia locais onde serviços de coleta de lixo enfrentam obstáculos, sinalizando carência de infraestrutura pública.
 
 4. **Bairros de Fortaleza**  
-   - *Por que manter?* Necessário para delimitar cada indicador em nível de bairro, permitindo comparações e junções de dados.
+   - *Por que manter?*  
+     - Fundamental para delimitação e junção (join) de dados.  
+     - Base geográfica para resumir indicadores por bairro.
 
 5. **CAPS - Centros de Assistência Psicossocial**  
-   - *Por que manter?* Retrata a oferta de serviços especializados em saúde mental, complementando a visão de infraestrutura de saúde.
+   - *Por que manter?*  
+     - Oferece dados sobre infraestrutura de saúde mental.  
+     - Pode ser transformado em *quantidade de CAPS por bairro* ou *distância média aos CAPS*.
 
 6. **Densidade Populacional por Bairros (km²)**  
-   - *Por que manter?* Permite relacionar a quantidade de infraestrutura disponível ao número de habitantes (ou domicílios).
+   - *Por que manter?*  
+     - Permite relacionar a oferta de infraestrutura com o número de habitantes.  
+     - Pode ser usado para normalizar outros indicadores (ex.: *Areninhas por 10 mil habitantes*).
 
 7. **Distritos de Educação**  
-   - *Por que manter?* Exibe a organização da rede educacional, mostrando como a educação está distribuída territorialmente.
+   - *Por que manter?*  
+     - Mostra a divisão territorial específica da rede educacional, podendo revelar disparidades na oferta de escolas.
 
 8. **Domicílios**  
-   - *Por que manter?* Informa a quantidade de residências por bairro, útil para comparar oferta de infraestrutura por número de domicílios.
+   - *Por que manter?*  
+     - Ajuda a comparar infraestrutura com o total de residências.  
+     - Indicador útil para entender a *cobertura de serviços por domicílio*.
 
 9. **Equipamentos de Assistência Social**  
-   - *Por que manter?* Representa a presença de serviços públicos voltados a grupos vulneráveis.
+   - *Por que manter?*  
+     - Demonstra a presença de equipamentos públicos voltados a grupos vulneráveis.  
+     - Pode ser convertido em *quantidade de equipamentos por bairro*.
 
 10. **Equipamentos de Saúde**  
-    - *Por que manter?* Indica a localização de postos e hospitais, componente-chave de infraestrutura de saúde.
+    - *Por que manter?*  
+      - Representa postos e hospitais, um componente-chave de infraestrutura de saúde.  
+      - Pode ser convertido em *densidade de equipamentos de saúde*.
 
 11. **IDH - Classificação**  
-    - *Por que manter?* Será nossa base de comparação, pois queremos avaliar a discrepância entre o IDH e a nova métrica.
+    - *Por que manter?*  
+      - Serve como base de comparação para a nova métrica de infraestrutura.
 
 12. **Pontos de Ônibus**  
-    - *Por que manter?* A mobilidade urbana é um elemento crítico de infraestrutura.
+    - *Por que manter?*  
+      - Mobilidade urbana é crucial; podemos avaliar a *densidade de pontos de ônibus* por bairro.
 
 13. **Rede Cuca**  
-    - *Por que manter?* São equipamentos voltados a cultura, esporte e lazer para jovens e comunidade em geral.
+    - *Por que manter?*  
+      - Oferece infraestrutura de cultura e lazer voltada a jovens; pode ser convertido em *número de equipamentos por bairro*.
 
 14. **Rede Juv**  
-    - *Por que manter?* Semelhante à Rede Cuca, voltada a jovens, ampliando o acesso a cultura/esporte/lazer.
+    - *Por que manter?*  
+      - Semelhante à Rede Cuca, ampliando o acesso a cultura/esporte/lazer para jovens.
 
 15. **Rede de Abastecimento de Água**  
-    - *Por que manter?* Acesso à água encanada é um indicador fundamental de saneamento básico.
+    - *Por que manter?*  
+      - Saneamento básico (água encanada) é um indicador essencial de infraestrutura.
 
 16. **Rede de Esgoto**  
-    - *Por que manter?* Acesso a rede de esgoto é outro indicador essencial de saneamento básico.
+    - *Por que manter?*  
+      - Saneamento básico (esgoto) é outro indicador crítico de infraestrutura.
 
 ---
 
 ## 3. Dataset Excluído
 
 1. **Gravidez na Adolescência**  
-   - *Por que retirar?* Trata-se de um indicador de saúde pública e condições sociais, mas não reflete diretamente a **infraestrutura urbana** (como equipamentos e serviços). Poderia ser incluído em um índice mais amplo de qualidade de vida, mas aqui estamos priorizando a infraestrutura física e o acesso a serviços de forma direta.
+   - *Por que retirar?*  
+     - Trata-se de um indicador de saúde pública e condições sociais, mas não reflete diretamente a **infraestrutura urbana** (como equipamentos e serviços).  
+     - Poderia integrar um índice mais amplo de qualidade de vida, mas aqui priorizamos a infraestrutura física e o acesso a serviços.
 
 ---
 
@@ -75,36 +100,84 @@ Abaixo, listamos os conjuntos de dados que **manteremos** por serem relevantes �
 
 Para construir uma **nova métrica** (ou índice) de infraestrutura urbana, adotaremos os seguintes passos:
 
-1. **Padronização Geoespacial**  
-   - Todos os *datasets* que possuem dados espaciais (shapefiles, geojsons, etc.) devem ser **unificados** por uma mesma referência territorial.  
-   - O *dataset* de **Bairros de Fortaleza** será a base para agrupar ou resumir os demais indicadores por bairro.
+### 4.1 Padronização Geoespacial
 
-2. **Normalização dos Indicadores**  
-   - Cada variável pode ser convertida para uma **escala de 0 a 1**, onde 0 representa a pior condição e 1 a melhor.  
-   - Exemplo: *densidade de equipamentos de saúde por 10 mil habitantes*, *percentual de domicílios com acesso à rede de esgoto*, etc.
+1. **Unificar projeções**:  
+   - Garantir que todos os datasets (Bairros, Areninhas, CAPS, etc.) estejam no mesmo sistema de coordenadas.  
+   - Exemplo: **EPSG:31984 (SIRGAS 2000 - UTM 24S)** ou **EPSG:4326 (WGS 84)**.
 
-3. **Combinação em um Índice Sintético**  
-   - Depois de normalizados, podemos fazer uma **média ponderada** dos indicadores selecionados, definindo pesos de acordo com a importância de cada dimensão (ex.: saneamento pode ter um peso maior que lazer, etc.).  
-   - O resultado será um **valor de infraestrutura** para cada bairro.
+2. **Chaves de agregação**:  
+   - Utilizar o *código do bairro* ou *nome do bairro* para associar cada equipamento, densidade populacional, etc., ao respectivo bairro.  
+   - Onde não houver correspondência exata, será necessário fazer uma correção manual ou *spatial join* (junção espacial).
 
-4. **Comparação com IDH**  
-   - Ao final, teremos para cada bairro:  
-     - **IDH oficial** (do dataset “IDH - Classificação”).  
-     - **Índice de Infraestrutura Urbana** (proposto).  
-   - Podemos então analisar a correlação entre os dois índices e identificar bairros com **alto IDH, mas baixa infraestrutura**, ou vice-versa.
+### 4.2 Criação de Indicadores
 
-5. **Visualização**  
-   - Criar mapas temáticos, gráficos de dispersão ou tabelas comparativas para ilustrar como o **IDH** se relaciona (ou não) com o **Índice de Infraestrutura**.
+1. **Indicadores de Infraestrutura**:  
+   - Exemplo 1: *Areninhas por 10 mil habitantes*.  
+   - Exemplo 2: *Percentual de domicílios com acesso à rede de esgoto*.  
+   - Exemplo 3: *Número de equipamentos de saúde por km²*.
+
+2. **Conversão em escala de 0 a 1**:  
+   - Para cada indicador, definir um método de normalização.  
+   - Exemplo: \(\displaystyle \text{Valor Normalizado} = \frac{\text{Valor} - \min(\text{Valor})}{\max(\text{Valor}) - \min(\text{Valor})}\).
+
+### 4.3 Combinação em um Índice Sintético
+
+1. **Definir pesos**:  
+   - Alguns indicadores podem ter maior relevância (ex.: saneamento) do que outros (ex.: lazer).  
+   - Exemplo: 40% saneamento, 20% mobilidade, 20% lazer, 20% saúde.
+
+2. **Cálculo do índice**:  
+   - Índice de Infraestrutura (II) = \(\sum (\text{indicador}_i \times \text{peso}_i)\).  
+   - Gera-se um valor final (0 a 1) para cada bairro.
+
+### 4.4 Comparação com IDH
+
+1. **Cruzamento**:  
+   - Para cada bairro, teremos:  
+     - **IDH** (do dataset “IDH - Classificação”).  
+     - **Índice de Infraestrutura** (II).  
+   - Podemos verificar correlações, identificar bairros com alto IDH e baixa infraestrutura, etc.
+
+2. **Visualização**:  
+   - Criar **mapas temáticos** mostrando o IDH e o II.  
+   - Gráficos de dispersão (IDH x II).  
+   - Tabelas comparativas.
 
 ---
 
 ## 5. Próximos Passos
 
-- **Coletar** e **limpar** todos os dados, garantindo que haja consistência nos nomes dos bairros e nas projeções geográficas.  
-- **Definir** o conjunto final de indicadores (ex.: número de Areninhas, quantidade de CAPS, porcentagem de domicílios atendidos por água/esgoto, etc.).  
-- **Calcular** a pontuação de infraestrutura para cada bairro.  
-- **Comparar** com o IDH, analisando padrões, correlações e possíveis discrepâncias.  
-- **Documentar** as conclusões e possíveis sugestões de políticas públicas voltadas à melhoria da infraestrutura nos bairros mais carentes.
+1. **Coletar e Limpar** os Dados  
+   - Verificar consistência de nomes de bairros, formatos de data, sistemas de coordenadas, etc.  
+   - Excluir ou corrigir entradas inconsistentes.
+
+2. **Definir o Conjunto Final de Indicadores**  
+   - Escolher variáveis-chave (ex.: Areninhas, Rede de Água, Rede de Esgoto, CAPS, Equipamentos de Saúde, etc.).  
+   - Decidir como cada variável será calculada (por km², por 10 mil habitantes, etc.).
+
+3. **Calcular a Pontuação de Infraestrutura**  
+   - Aplicar a normalização para cada indicador.  
+   - Atribuir pesos e gerar o índice final para cada bairro.
+
+4. **Comparar com o IDH**  
+   - Analisar correlações e discrepâncias.  
+   - Identificar bairros prioritários para políticas públicas.
+
+5. **Documentar Conclusões**  
+   - Elaborar relatórios e visualizações.  
+   - Propor intervenções ou sugestões de melhoria na infraestrutura urbana dos bairros mais carentes.
+
+---
+
+## 6. Justificativas Complementares
+
+- **Uso dos Distritos de Educação e Regionais**:  
+  - As regionais e distritos podem oferecer uma visão mais justa de como saúde e educação se distribuem, pois alguns bairros podem se sobrepor a diferentes regionais.  
+  - Facilita o planejamento de políticas públicas direcionadas, principalmente para equipamentos de saúde e educação.
+
+- **Possibilidade de Expansão**:  
+  - Indicadores de resultado social (como *Gravidez na Adolescência*) podem ser reintroduzidos em estudos futuros que busquem avaliar **qualidade de vida** de forma mais ampla, não apenas a infraestrutura física.
 
 ---
 
