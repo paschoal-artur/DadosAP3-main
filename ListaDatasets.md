@@ -111,18 +111,6 @@ Localização e identificação dos diversos equipamentos municipais de assistê
 ### Descrição:
 localização e informações diversas dos equipamentos municipais de saúde e assistência social, geridos pela Prefeitura de Fortaleza.
 
-
-## [Gravidez na Adolescência](https://mapas.fortaleza.ce.gov.br/mapa/803/gravidez-na-adolescencia)
-### Categoria: MULHER
-#### Subcategoria: Dados Demográficos e Socioeconômicos
-**Fonte**: SMS - Tabnet
-**Ano**: 2023
-**Última atualização**: 2024-07-02 00:34:52
-
-### Descrição:
-Percentual total de nascidos vivos de mães adolescentes em relação ao total de nascidos vivos.
-
-
 ## [IDH- Classificação](https://mapas.fortaleza.ce.gov.br/mapa/35/idh-classificacao)
 ### Categoria: SOCIOECONÔMICOS
 #### Subcategoria: Dados Populacionais
@@ -187,5 +175,18 @@ Mapa da rede de abastecimento de água da Companhia de Água e Esgoto do Ceará 
 
 ### Descrição:
 Mapa da rede de esgoto da Companhia de Água e Esgoto do Ceará na cidade de Fortaleza.
+
+----
+## Removidos
+
+#### [Gravidez na Adolescência](https://mapas.fortaleza.ce.gov.br/mapa/803/gravidez-na-adolescencia)
+#### Categoria: MULHER
+#### Subcategoria: Dados Demográficos e Socioeconômicos
+**Fonte**: SMS - Tabnet
+**Ano**: 2023
+**Última atualização**: 2024-07-02 00:34:52
+
+### Descrição:
+Percentual total de nascidos vivos de mães adolescentes em relação ao total de nascidos vivos.
 
 
